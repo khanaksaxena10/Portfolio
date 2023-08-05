@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Khanak's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Email</a>- saxenakhanak@gmail.com</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Greetings,<br />My name is
+          <span class="purple">Khanak Saxena</span> and I am a<br />
+          <span id="element"></span><br><br>
+          Currently pursuing BCA (Bachelor of Computer Applications)<br>:)<br>
+          <div class="button">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit GitHub</button>
+            <button class="btn">Visit LinkedIn</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="ResPic.jpg" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <h1><u>Skills</u><br /><br /></h1>
+        <div class="box">
+          <div class="vertical"></div>
+        </div>
+        <h2></h2><span id="element2"></span></h2>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Graphic Designer",
+          "Web Designer",
+          "Video Editor",
+        ],
+        typeSpeed: 100,
+      });
+      var typed = new Typed("#element2", {
+        strings: [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Python",
+          "C/C++",
+          "Canva",
+          "Photoshop",
+        ],
+        typeSpeed: 100,
+      });
+    </script>
+
+  </body>
+</html>
