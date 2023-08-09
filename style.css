@@ -12,7 +12,7 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: safe;
   align-items: center;
   height: 90px;
   background-color: rgb(240, 189, 102);
@@ -52,34 +52,32 @@ nav ul li a:hover {
 }
 
 .leftSection {
-  background-color: rgb(240, 189, 102);
   font-size: 1.75rem;
   margin: 50px 0;
   border-radius: 10%;
   padding: 100px 50px;
-  height: 25vh;
+  color: rgb(251, 213, 146);
 }
 
 .rightSection img {
-  width: 80%;
-  height: 75%;
+  width: 85%;
+  height: 73%;
   margin: 50px 0;
   border-radius: 10%;
 }
 
 .purple {
-  color: rgb(84, 49, 116);
+  color: rgb(250, 198, 110);
 }
 
 #element {
-  color: rgb(93, 0, 0);
+  color: rgb(240, 189, 102);
 }
 
 .secondSection {
   max-width: 80vw;
   margin: auto;
   color: rgb(240, 189, 102);
-
   height: 20vh;
 }
 
@@ -112,23 +110,58 @@ main hr {
   background-color: rgb(251, 213, 146);
 }
 
-.leftSection .button {
-  padding: 50px;
-}
+@media only screen and (max-width: 768px) {
+  .firstSection {
+    display: block;
+  }
+  .rightSection img {
+    padding: 50px 50px 0;
+    padding-top: 1px;
+    width: 100%;
+    height: 230vh;
+  }
+  .firstSection {
+    display: block;
+    width: 100%;
+  }
 
-.leftSection .btn {
-  padding: 2px;
-  background-color: rgb(147, 63, 3);
-  color: rgb(251, 213, 146);
-  border: 2px solid rgb(240, 189, 102);
-  border-radius: 10px;
-  cursor: pointer;
-  justify-content: space-around;
-}
+  .left {
+    font-size: 5rem;
+    padding: 30px 30px;
+    border-radius: 0%;
+    background-color: rgb(240, 189, 102);
+    color: rgb(147, 63, 3);
+    border-top-right-radius: 60%;
+  }
 
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 30px;
-    line-height: 50px;
+  .right {
+    font-size: 1.75rem;
+    background-color: rgb(240, 189, 102);
+  }
+
+  .firstSection > div {
+    width: 190%;
+  }
+
+  .leftSection {
+    font-size: 3rem;
+    margin: 50px 50px;
+    margin-bottom: 1px;
+  }
+
+  .secondSection h1 {
+    font-size: 7rem;
+  }
+
+  nav {
+    display: block;
+    background-color: rgb(147, 63, 3);
+    height: 100px;
+    width: 100%;
+  }
+
+  nav ul {
+    display: block;
+    justify-content: center;
   }
 }
